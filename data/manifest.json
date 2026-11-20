@@ -1,0 +1,118 @@
+{
+  "pack": "acquisition-consolidation",
+  "tables": {
+    "ownership": {
+      "columns": [
+        "wave",
+        "right_id",
+        "owner",
+        "member",
+        "valid_from",
+        "valid_to",
+        "controls",
+        "economic_share",
+        "rev",
+        "status"
+      ],
+      "rows": 6,
+      "sha256": "5cfa12d6cf23600cc17e4749b9253555a3a736fe36638ccf0379262497cd2007"
+    },
+    "lines": {
+      "columns": [
+        "line_id",
+        "operator",
+        "from_day",
+        "to_day",
+        "capacity_mw"
+      ],
+      "rows": 4,
+      "sha256": "3ffc1eb78f6596a80fe6779d9b5d6fda1863215b78a3230df3af7d2df40a7e55"
+    },
+    "monthly_reports": {
+      "columns": [
+        "wave",
+        "report",
+        "line_id",
+        "from_day",
+        "to_day",
+        "output_mwp",
+        "rev"
+      ],
+      "rows": 4,
+      "sha256": "b077dc82bf58dbfa8c4d2b483f211a2262da36e927afc5f10529201d94028d03"
+    },
+    "certified_slices": {
+      "columns": [
+        "wave",
+        "slice_id",
+        "report",
+        "report_rev",
+        "from_day",
+        "to_day",
+        "output_mwp"
+      ],
+      "rows": 5,
+      "sha256": "962c19e12916f5a40e8af897ba442ac985ac11398c1f21f9c7303e4145ebe0db"
+    },
+    "shipments": {
+      "columns": [
+        "wave",
+        "ship_id",
+        "line_id",
+        "seller",
+        "buyer",
+        "day",
+        "mwp",
+        "yuan"
+      ],
+      "rows": 5,
+      "sha256": "281d953569863f3c3e67983fbf4b2bbed5aa98d9c1b3d202ae78f431a4d60c05"
+    },
+    "shipment_coverage": {
+      "columns": [
+        "wave",
+        "line_id",
+        "slice_id",
+        "from_day",
+        "to_day",
+        "ship_ids"
+      ],
+      "rows": 2,
+      "sha256": "1cfff8ce8ab6bf48542f12db3df63b622c683c5ec8af22ebb3756833f4c9f472"
+    },
+    "purchase_receipts": {
+      "columns": [
+        "wave",
+        "receipt",
+        "ship_id",
+        "buyer",
+        "seller",
+        "book_day",
+        "mwp",
+        "yuan"
+      ],
+      "rows": 3,
+      "sha256": "34bdb19acbcbaf82446719e95991dd211a67fd559543ae0a88a16819f86eca69"
+    }
+  },
+  "references": [
+    [
+      "certified_slices",
+      "report",
+      "monthly_reports",
+      "report"
+    ],
+    [
+      "shipment_coverage",
+      "slice_id",
+      "certified_slices",
+      "slice_id"
+    ],
+    [
+      "purchase_receipts",
+      "ship_id",
+      "shipments",
+      "ship_id"
+    ]
+  ]
+}

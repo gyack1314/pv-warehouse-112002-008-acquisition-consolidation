@@ -1,0 +1,6 @@
+wave,slice_id,report,report_rev,from_day,to_day,output_mwp
+1,Z11,P1,1,01,14,35
+1,Z12,P1,1,14,21,15
+1,Z13,P1,1,21,31,46
+1,Z31,P3,1,01,31,70
+4,Z21,P2,1,21,31,12

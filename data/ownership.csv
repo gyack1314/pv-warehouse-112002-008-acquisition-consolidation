@@ -1,0 +1,7 @@
+wave,right_id,owner,member,valid_from,valid_to,controls,economic_share,rev,status
+1,O1,HOLD,FAB-A,01,31,true,1.00,1,active
+1,O2,HOLD,INV-B,01,31,false,0.30,1,active
+1,O3,INV-B,FAB-B,01,31,false,0.50,1,active
+1,O4,HOLD,FAB-B,21,31,true,0.55,1,active
+3,O4,HOLD,FAB-B,14,31,true,0.55,2,active
+4,O5,FAB-B,INV-B,24,31,false,0.10,1,active

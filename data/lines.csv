@@ -1,0 +1,5 @@
+line_id,operator,from_day,to_day,capacity_mw
+A-S,FAB-A,01,31,200
+B-24,FAB-B,01,23,180
+B-24,FAB-B,23,31,206
+B-17,FAB-B,08,31,80

@@ -1,0 +1,6 @@
+wave,ship_id,line_id,seller,buyer,day,mwp,yuan
+1,A1,A-S,FAB-A,FAB-B,10,12,4100
+1,A2,A-S,FAB-A,FAB-B,17,10,3500
+1,A3,A-S,FAB-A,OUTSIDE,23,48,18000
+2,B1,B-24,FAB-B,FAB-A,15,7,2700
+2,B2,B-24,FAB-B,OUTSIDE,20,8,3620

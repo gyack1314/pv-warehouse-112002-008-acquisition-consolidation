@@ -1,0 +1,4 @@
+wave,receipt,ship_id,buyer,seller,book_day,mwp,yuan
+1,B09,A1,FAB-B,FAB-A,17,12,4100
+2,B10,A2,FAB-B,FAB-A,22,10,3500
+4,A07,B1,FAB-A,FAB-B,27,7,2700
